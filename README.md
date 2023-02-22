@@ -1,3 +1,17 @@
+# Running
+
+This project uses [poetry](https://python-poetry.org/docs/#installing-with-the-official-installer) to manage dependencies.
+
+To run the tests:
+```
+  poetry run pytest tests/test_main.py
+```
+
+To run the main function:
+```
+  poetry run python src/main.py -n 3 -g guest_a guest_b guest_c -p "[{\"preference\": \"avoid\", \"guests\": [\"guest_a\", \"guest_b\"]}, {\"preference\": \"pair\", \"guests\": [\"guest_c\", \"guest_a\"]}]"
+```
+
 # Overview
 
 - The Annual Legislator's Gala is here, it's the one night where members of congress all gather in one ballroom in DC, and discuss the results of the legislative session that had just passed. The event planners are as nervous as they are excited, knowing that they need to boil the seating chart down to a science because if the wrong pair are seated at the same table, tempers will flare. Additionally, some members of congress want to have constructive conversations about how the past year went, so the planners want to create a memorable night by seating them at the same table
