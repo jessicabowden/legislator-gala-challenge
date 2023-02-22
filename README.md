@@ -9,7 +9,7 @@ To run the tests:
 
 To run the main function:
 ```
-  poetry run python src/main.py -n 3 -g guest_a guest_b guest_c -p "[{\"preference\": \"avoid\", \"guests\": [\"guest_a\", \"guest_b\"]}, {\"preference\": \"pair\", \"guests\": [\"guest_c\", \"guest_a\"]}]"
+  poetry run python src/main.py -n 3 -g guest_a guest_b guest_c -p '[{"preference": "avoid", "guests": ["guest_a", "guest_b"]}, {"preference": "pair", "guests": ["guest_c", "guest_a"]}]'
 ```
 
 # Overview

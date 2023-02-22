@@ -70,7 +70,7 @@ def main(num_tables: int, guest_list: list[str], planner_preferences: list[dict]
 
 if __name__ == "__main__":
     # Example:
-    # poetry run python src/main.py -n 3 -g guest_a guest_b guest_c -p "[{\"preference\": \"avoid\", \"guests\": [\"guest_a\", \"guest_b\"]}, {\"preference\": \"pair\", \"guests\": [\"guest_c\", \"guest_a\"]}]"
+    # poetry run python src/main.py n 3 -g guest_a guest_b guest_c -p '[{"preference": "avoid", "guests": ["guest_a", "guest_b"]}, {"preference": "pair", "guests": ["guest_c", "guest_a"]}]'
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-n', '--num_tables', type=int)
